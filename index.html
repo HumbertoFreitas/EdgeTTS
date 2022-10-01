@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Texto em Fala</title><style>
+ body{background:#242424; color:#C2C2C2;}
+ input{color: #FFFFFF; background: #006CBE;}
+ input:hover{background: #0078D4;}
+</style>
+</head>
+<body><p><br></p><input
+ value='Salvar'
+ type='button'
+ style='width:100; height:50;'
+ onclick='s.textContent = t.value;'>
+<input
+ value='Limpar'
+ type='button'
+ style='width:100; height:50; margin-left:20;'
+ onclick='s.textContent = null; t.value = null;'>
+
+<input
+ value='Autor'
+ type='button'
+ style='width:100; height:50; margin-left:20;'
+ onclick="window.open('https://www.youtube.com/c/HSete/videos')"><p></p><textarea
+ id='t'
+ style='background:#4A4A4A; color:#C2C2C2;
+ width:99%; height:40%;'></textarea><p></p><span id='s'></span></body>
+</html>
