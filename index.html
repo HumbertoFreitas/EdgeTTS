@@ -1,36 +1,47 @@
-<!--
-
+<!-- =============================================
 Copyright (c) 2022 Humberto Freitas
 YouTube: https://www.youtube.com/c/HSete
+============================================== -->
 
--->
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html>
 <head>
-<title>Texto em Fala</title><style>
- body{background:#242424; color:#C2C2C2;}
- input{color: #FFFFFF; background: #006CBE;}
- input:hover{background: #0078D4;}
+<title>Texto em Fala</title><style type="text/css">
+body {
+	background: #242424;
+	color     : #C2C2C2;
+}
+input {
+	color     : #FFFFFF;
+	background: #006CBE;
+	width     : 100;
+	height    : 50;
+}
+input:hover {
+	background: #0078D4;
+}
+textarea {
+	background: #4A4A4A;
+	color     : #C2C2C2;
+	width     : 99%;
+	height    : 40%;
+}
 </style>
 </head>
+<!-- ========================================= -->
+
 <body><p><br></p><input
  value='Salvar'
  type='button'
- style='width:100; height:50;'
  onclick='s.textContent = t.value;'>
 <input
  value='Limpar'
  type='button'
- style='width:100; height:50; margin-left:20;'
+ style='margin-left:20;'
  onclick='s.textContent = null; t.value = null;'>
 
 <input
  value='Autor'
  type='button'
- style='width:100; height:50; margin-left:20;'
- onclick="window.open('https://www.youtube.com/c/HSete/videos')"><p></p><textarea
- id='t'
- style='background:#4A4A4A; color:#C2C2C2;
- width:99%; height:40%;'></textarea><p></p><span id='s'></span></body>
+ style='margin-left:20;'
+ onclick="window.open('https://www.youtube.com/c/HSete/videos')"><p></p><textarea id='t'></textarea><p><br></p><span id='s'></span></body>
 </html>
