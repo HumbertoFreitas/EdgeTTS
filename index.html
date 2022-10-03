@@ -7,6 +7,9 @@ body {
 	background: #242424;
 	color     : #C2C2C2;
 }
+table {
+	width     : 99%;
+}
 input {
 	color     : #FFFFFF;
 	background: #006CBE;
@@ -24,9 +27,14 @@ textarea {
 }
 </style>
 </head>
-<!-- ========================================= -->
 
+<!-- ========================================= -->
 <body><p><br></p>
+
+<table>
+<tr>
+
+<td>
 
 <input
  value='Salvar'
@@ -39,19 +47,33 @@ textarea {
  style='margin-left:20;'
  onclick='s.textContent = null; t.value = null;'>
 
+</td>
+
+<td align="right">
+
 <input
  value='Doar'
  type='button'
- style='margin-left:20;'
  onclick="window.alert('PIX: HSete@outlook.com.br');">
 
 <input
  value='Autor'
  type='button'
  style='margin-left:20;'
- onclick="window.open('https://www.youtube.com/c/HSete/videos')"><p></p>
+ onclick="window.open('https://www.youtube.com/c/HSete/videos')">
 
-<textarea id='t'></textarea><p><br></p>
+<input
+ value='GitHub'
+ type='button'
+ style='margin-left:20;'
+ onclick="window.open('https://github.com/HumbertoFreitas/EdgeTTS')">
+
+</td>
+
+</tr>
+</table><p></p>
+
+<textarea id='t'></textarea><p></p>
 <span id='s'></span>
 
 </body>
